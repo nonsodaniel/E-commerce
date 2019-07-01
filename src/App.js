@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar from './components/layouts/Navbar';
 import Home from "./components/home/Home";
+import Cart from "./components/cart/Cart";
 
 
 class App extends Component {
@@ -15,12 +16,12 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
-            {/* <Route path="/cart" component={Cart} /> */}
+            <Route path="/cart" component={Cart} /> 
           </Switch>
         </div>
       </BrowserRouter>
-    );
-  }
-}
-
-export default App;
+        );
+      }
+    }
+    
+    export default App;
