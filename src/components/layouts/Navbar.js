@@ -8,16 +8,16 @@ export default function Navbar() {
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a className="navbar-brand" href="#">Sample Store</a>
+                <Link to="/" className="navbar-brand">Sample Store</Link>
                 <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                        <Link to="/" className="nav-link">Shop <span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Link</a>
+                        <Link to="/" className="nav-link">Link</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <Link to="/" className="nav-link disabled" tabIndex="-1" aria-disabled="true">Disabled</Link>
                     </li>
                 </ul>
                 <form className="form-inline my-2 my-lg-0">

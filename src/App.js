@@ -7,7 +7,10 @@ class App extends Component {
 
   render() {
     return (
-      <Navbar />
+      <BrowserRouter>
+        <Navbar />
+      </BrowserRouter>
+
     );
   }
 }
